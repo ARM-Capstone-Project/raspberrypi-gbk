@@ -47,7 +47,7 @@ Run Mosquitto Broker in the first virtual environment
 /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 ```
 
-[broker](mqtt_intro/images/mosquitto.png)
+![broker](mqtt_intro/images/mosquitto.png)
 
 Run mqtt_sub.py in the second virtual environment
 
@@ -55,7 +55,7 @@ Run mqtt_sub.py in the second virtual environment
 python3 mqtt_sub.py
 ```
 
-[pub](mqtt_intro/images/mqtt_sub.png)
+![sub](mqtt_intro/images/mqtt_sub.png)
 
 Run mqtt_pub.py in the third virtual environment
 
@@ -63,7 +63,7 @@ Run mqtt_pub.py in the third virtual environment
 python3 mqtt_pub.py
 ```
 
-[broksuber](mqtt_intro/images/mqtt_pub.png)
+![pub](mqtt_intro/images/mqtt_pub.png)
 
 Kill running port
 
@@ -71,6 +71,16 @@ Kill running port
 lsof -i tcp:1883
 kill -9 <port-id>
 ```
+
+### Other subscribers
+
+1. Android MyMQTT
+
+2. EasyMQTT for iphone
+
+### Broker
+
+Mosquitto is a public broker. Using a public broker exposes the data.
 
 ### References
 
