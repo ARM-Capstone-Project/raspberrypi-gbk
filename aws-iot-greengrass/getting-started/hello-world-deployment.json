@@ -1,0 +1,10 @@
+{
+  "components": {
+    "com.example.HelloWorld": {
+      "componentVersion": "1.0.0",
+      "configurationUpdate": {
+        "merge": "{\"Message\":\"universe\"}"
+      }
+    }
+  }
+}
