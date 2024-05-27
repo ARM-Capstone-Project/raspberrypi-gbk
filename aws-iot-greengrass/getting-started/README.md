@@ -2,21 +2,21 @@
 
 https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-started.html
 
-![getting started](aws-iot-greengrass/images/1. getting started.png)
+![getting started](aws-iot-greengrass/images/1_getting_started.png)
 
 ## End Goal
 
-![greengrass core devices](aws-iot-greengrass/getting-started/images/2. greengrass core devices.png)
+![greengrass core devices](aws-iot-greengrass/getting-started/images/2_greengrass_core_devices.png)
 
-![greengrass deployments](aws-iot-greengrass/images/2b. greengrass deployments.png)
+![greengrass deployments](aws-iot-greengrass/images/2b_greengrass_deployments.png)
 
-![s3 bucket](aws-iot-greengrass/getting-started/images/3. s3 bucket.png)
+![s3 bucket](aws-iot-greengrass/getting-started/images/3_s3_bucket.png)
 
 ## Set up your environment
 
 Install Java in Raspberry Pi
 
-![java](aws-iot-greengrass/getting-started/images/4. install java.png)
+![java](aws-iot-greengrass/getting-started/images/4_install_java.png)
 
 Install AWS in Raspberry Pi
 
@@ -30,7 +30,7 @@ $ aws --version
 
 ## Install the AWS IoT Greengrass Core software in Raspberry Pi
 
-![download nucleus](aws-iot-greengrass/getting-started/images/5. download nucleus.png)
+![download nucleus](aws-iot-greengrass/getting-started/images/5_download_nucleus.png)
 
 Install nucleus
 
@@ -49,28 +49,27 @@ sudo -E java -Droot="/greengrass/v2" -Dlog.store=FILE \
   --deploy-dev-tools true
 ```
 
-![install nucleus](aws-iot-greengrass/getting-started/images/6. install nucleus.png)
+![install nucleus](aws-iot-greengrass/getting-started/images/6_install_nucleus.png)
 
-![verify greengrass](aws-iot-greengrass/images/7. verify greengrass cli.png)
+![verify greengrass](aws-iot-greengrass/images/7_verify_greengrass_cli.png)
 
 ## Develop and test a component on your device
 
-![develop component](aws-iot-greengrass/images/8. develop component.png)
+![develop component](aws-iot-greengrass/images/8_develop_component.png)
 
-![deploy component](aws-iot-greengrass/images/9. deploy component.png)
+![deploy component](aws-iot-greengrass/images/9_deploy_component.png)
 
-![restart component](aws-iot-greengrass/images/10. restart component.png)
+![restart component](aws-iot-greengrass/images/10_restart_component.png)
 
-![update config](aws-iot-greengrass/images/11. update config.png)
+![update config](aws-iot-greengrass/images/11_update_config.png)
 
-![remove component](aws-iot-greengrass/images/11b. remove component.png)
+![remove component](aws-iot-greengrass/images/11b_remove_component.png)
 
 ## Create your component in the AWS IoT Greengrass service
 
 Create s3 bucket
 
-
-![s3 bucket](aws-iot-greengrass/images/12. create s3 bucket.png)
+![s3 bucket](aws-iot-greengrass/images/12_create_s3_bucket.png)
 
 Create policy
 
@@ -84,9 +83,9 @@ aws iam create-policy --policy-name BengGreengrassV2ComponentArtifactPolicy --po
 aws iam attach-role-policy --role-name GreengrassV2TokenExchangeRole --policy-arn arn:aws:iam::{arn}:policy/BengGreengrassV2ComponentArtifactPolicy
 ```
 
-![upload artifact to s3](aws-iot-greengrass/images/14. upload artifact to s3 bucket.png)
+![upload artifact to s3](aws-iot-greengrass/images/14_upload_artifact_to_s3.png)
 
-![describe component](aws-iot-greengrass/images/15. describe component.png)
+![describe component](aws-iot-greengrass/images/15_describe_component.png)
 
 ## Deploy your component
 
@@ -96,4 +95,4 @@ aws greengrassv2 create-deployment \
   --cli-input-json file://hello-world-deployment.json \
   --region ap-southeast-1
 ```
-![tail log](aws-iot-greengrass/images/16. tail log.png)
+![tail log](aws-iot-greengrass/images/16_tail_log.png)
